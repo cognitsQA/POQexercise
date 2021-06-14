@@ -9,7 +9,7 @@
     * Execute in cmd: node -v
 5. Appium
     * Execute in cmd: npm install -g appium
-6. [Java JDK for Windows](https://www.oracle.com/java/technologies/javase-downloads.html)
+6. [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
     * Define Environment Variables Windows:
         * JAVA HOME: C:\Program Files\Java\jdk-version
         * %JAVA_HOME%
@@ -19,7 +19,7 @@
 7. [Android studio](https://developer.android.com/studio/index.html)
     * Open for the first time and install ANDROID JDK
     * Define Environment Variables Windows: 
-        * ANDOIRD_HOME: C:\Users\Usuario\AppData\Local\Android\Sdk        
+        * ANDOIRD_HOME: C:\Users\User\AppData\Local\Android\Sdk        
         * %ANDROID_HOME%\platform-tools
         * %ANDROID_HOME%
     * Define Environment Variables macOS: https://stackoverflow.com/questions/28296237/set-android-home-environment-variable-in-mac
@@ -60,5 +60,5 @@ open the terminal and navigate to the folder where the chromedriver is and excut
 
 ### Credits
 This repo is the result of the collective knowledge of many people if you have any contribution, contact the owner of this repository.
-People for this POQ exercise
+People for this POQ exercise:
 Carlos cotto, Angel Torre, Jhonatan Flores, Sebastian morales
