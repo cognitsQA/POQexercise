@@ -1,61 +1,59 @@
-# Ambiente de pruebas
+# Testing Envirnonment
 
-### Instalar
+### Install
 0. [IntelliJ Community](https://www.jetbrains.com/es-es/idea/download/#section=windows)
 1. [Git Windows](https://git-scm.com/download/win)
 2. [Node JS](https://nodejs.org/es/download/)
-    * Ejecutar en cmd: node -v
+    * Execute in cmd: node -v
 3. Appium
-    * Ejecutar en consola: npm install -g appium
+    * Execute in cmd: npm install -g appium
 4. [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-    * Definir variables de entorno
+    * Define Environment Variables
         * JAVA HOME: C:\Program Files\Java\jdk-version
         * %JAVA_HOME%
-        * Ejecutar el comando javac en cmd para verificar configuración
+        * Execute javac command in cmd to verify configuration.
 5. [Android studio](https://developer.android.com/studio/index.html)
-    * Abrir por primera vez para que instale el ANDROID JDK
-    * Definir variables de entorno
+    * Open for the first time and install ANDROID JDK
+    * Define Environment Variables
         * ANDOIRD_HOME: C:\Users\Usuario\AppData\Local\Android\Sdk        
         * %ANDROID_HOME%\platform-tools
         * %ANDROID_HOME%
 6. Appium Doctor
-    * Ejecutar en cmd: npm install -g appium-doctor
+    * Execute in cmd: npm install -g appium-doctor
     * cmd: appium-doctor
    
-### Clonar Repo
-0. Generar una Shh y registrarla en su cuenta de donde esta clonando este repositorio (Bitbucket, GitHub, gitLab)
+### Clone Repo
+0. Generate a Shh and register in the account where you are clonning this repo. (i.e. Bitbucket, GitHub, gitLab)
    * [Windows](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-windows)
    * [GNU/Linux](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux)
    * [MacOS](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-mac)
 
 1. git bash: git clone direccionShhRepo
 
-   1.1 Para MAC para evitar el mensaje "no reconoce chromedriver":
-Abrimos la terminal y nos vamos hacia la carpeta donde se encuentra el chrome driver y corremos el siguiente comando
+   1.1 For macOS to evade the "no reconoce chromedriver" message:
+open the terminal and navigate to the folder where the chromedriver is and excute the following commnad:
     * xattr -d com.apple.quarantine chromedriver
 
-### Ejecutar Appium
+### Execute Appium
 1. cmd: appium
-2. Seleccion de dispositivo:
-   * En caso de ser físico
-      * El disposito debe estar registrado en el archivo:
-   * En caso de ser Kobiton
-      * Configurar el data provider ya sea en la clase o el xml
-3. Asegurarse que el package y activity estan configurados en el archivo:
-4. Ejecute su prueba con confianza
+2. Device selection:
+   * In case of being a physical device:
+      * The device must be registered in the following file: localconfiguration 
+   * In case of being a Kobiton:
+      * Configure the data provider in the java class or the xml
+3.Make sure the package and activity are configrued.
+4. Excute your test.
 
-### Ejecutar web
-1. Seleccion de navegador
-   * Configurar el data provider ya sea en la clase o el xml
-2. Ejecute su prueba con confianza
+### Execute web
+1. Browser selection
+   * Configure the data provider in the java class or the xml.
+2. Execute your test.
 
-### Pruebas API
-1. Importe la libreria de manipulación de APIS
-2. Ejecute su prueba con confianza
+### API Tests
+1. Import the API manupulation library.
+2. Execute your test.
 
-### Créditos
-Este repositorio es el resultado del conocimiento colectivo de muchas personas
-y tu puedes ser una de ellas, si tienes algun aporte no dudes en escribir al dueño
-del repositorio.
-Personas for this POQ exercise
+### Credits
+This repo is the result of the collective knowledge of many people if you have any contribution, contact the owner of this repository.
+People for this POQ exercise
 Carlos cotto, Angel Torre, Jhonatan Flores, Sebastian morales
