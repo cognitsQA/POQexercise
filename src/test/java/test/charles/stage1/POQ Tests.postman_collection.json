@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "acbae637-9d02-4061-b28a-36f7c428914d",
+		"name": "POQ Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Y28wMTI0MDpCYW5jb0AxMjM0",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-app-id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": "USD",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": "19.0",
+						"type": "text"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-es",
+						"type": "text"
+					},
+					{
+						"key": "platform",
+						"value": "iphone",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": "2CF7372D-C036-4ED5-A9F4-5A28BC1DE443",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": "74",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "com.poqstudio.missguided/19.0.0 iOS/13.6",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate, br",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "currency-code",
+						"value": "USD",
+						"type": "text"
+					},
+					{
+						"key": "appuseragent",
+						"value": "Poq-Native-iOS-App",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": "e0KzaoUmCUraKuIeazIS5Hzmw4KQRozyAqEkK2bco4M=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isMasterCard\": false,\n\t\"username\": \"test2@test.com\",\n\t\"password\": \"test2@2021\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://missguidedus.poq.io/account/login/1/BDA9034A-6C55-4A19-90C4-A87FB3337B84",
+					"protocol": "https",
+					"host": [
+						"missguidedus",
+						"poq",
+						"io"
+					],
+					"path": [
+						"account",
+						"login",
+						"1",
+						"BDA9034A-6C55-4A19-90C4-A87FB3337B84"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://missguidedus.poq.io/products/detail/1/147825?externalId=1694824&poqUserId=2CF7372D-C036-4ED5-A9F4-5A28BC1DE443",
+					"protocol": "https",
+					"host": [
+						"missguidedus",
+						"poq",
+						"io"
+					],
+					"path": [
+						"products",
+						"detail",
+						"1",
+						"147825"
+					],
+					"query": [
+						{
+							"key": "externalId",
+							"value": "1694824"
+						},
+						{
+							"key": "poqUserId",
+							"value": "2CF7372D-C036-4ED5-A9F4-5A28BC1DE443"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Y28wMTI0MDpCYW5jb0AxMjM0",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-app-id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": "USD",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": "19.0",
+						"type": "text"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-es",
+						"type": "text"
+					},
+					{
+						"key": "platform",
+						"value": "iphone",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": "FBFE5113-BD26-4DD5-B255-F7B5DCCE96BF",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": "74",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "com.poqstudio.missguided/19.0.0 iOS/13.6",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip, deflate, br",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "currency-code",
+						"value": "USD",
+						"type": "text"
+					},
+					{
+						"key": "appuseragent",
+						"value": "Poq-Native-iOS-App",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": "OrNOna9YedqkWIdHRuriwr9PilE60HzasMuXZejW0ww=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"profile\": {\n\t\t\"email\": \"test4@test.com\",\n\t\t\"firstName\": \"Test4\",\n\t\t\"lastName\": \"Test4\",\n\t\t\"isPromotion\": false,\n\t\t\"encryptedPassword\": \"test4@2021\"\n\t},\n\t\"credentials\": {\n\t\t\"username\": \"test4@test.com\",\n\t\t\"password\": \"test3@2021\"\n\t},\n\t\"isPromotion\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://missguidedus.poq.io/account/register/1/FBFE5113-BD26-4DD5-B255-F7B5DCCE96BF",
+					"protocol": "https",
+					"host": [
+						"missguidedus",
+						"poq",
+						"io"
+					],
+					"path": [
+						"account",
+						"register",
+						"1",
+						"FBFE5113-BD26-4DD5-B255-F7B5DCCE96BF"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

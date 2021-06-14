@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "web">
+    <listeners>
+        <listener class-name="auxiliar.reports.TestListener"/>
+    </listeners>
+
+    <parameter name="browserName" value="chrome" />
+    <test name = "modulo1">
+        <packages>
+            <package name="test.web.modulo1" />
+        </packages>
+    </test>
+    <test name = "modulo2">
+        <packages>
+            <package name="test.web.modulo2" />
+        </packages>
+    </test>
+</suite>
